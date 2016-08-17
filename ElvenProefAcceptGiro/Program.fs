@@ -13,7 +13,7 @@ let Kenmerk (input:char[]):string =
     for i = 0 to input.Length - 1 do
         sum <- sum + (int(string(_15CijferArray.[i])) * _Gewichten.[i])
 
-    let mutable result = "" 
+    let mutable result = ""
     if (11 - (sum % 11)) = 10 then result <- "1"+_15Cijfer
     elif (11 - (sum % 11)) = 11 then result <- "0"+_15Cijfer
     else result <- string((11 - (sum % 11)))+_15Cijfer
