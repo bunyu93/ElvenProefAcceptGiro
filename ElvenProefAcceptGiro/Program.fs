@@ -11,7 +11,7 @@ let _15CijferArray = _15Cijfer.ToCharArray() |> Array.rev
 let Kenmerk (input:char[]):string = 
     let mutable sum = 0
     for i = 0 to input.Length - 1 do
-        sum <- sum + (int(string(_15CijferArray.[i])) * _Gewichten.[i])
+        sum <- sum + (int(string(input.[i])) * _Gewichten.[i])
 
     let mutable result = ""
     if (11 - (sum % 11)) = 10 then result <- "1"+_15Cijfer
